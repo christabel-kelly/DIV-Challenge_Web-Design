@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional training institute">
+	  <meta name="keywords" content="training institute, affordable professional training, IT training">
+  	<meta name="author" content="Brad Traversy">
+    <title>Kalorm Training Institute | Training Programs</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1 style="text-align:left; font-size:35px;"><span class="highlight">Kalorm</span> Training Institute</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li class="current"><a href="Services.html">Training Programs</a></li>
+	    <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="newsletter">
+      <div class="container">
+        <h1 style="color:black; margin-right:60px;">Search for Training Programs</h1>
+        <br>
+          <input type="text" id="program" placeholder=" Enter training program..." style=" font-size:17px; width:400px; height: 40px;">
+          <button class="button_1" onclick="myFunction()" >Search</button>
+      </div>
+    </section>
+
+<p id="dem" style="font-size:15px; font-weight:bold; margin-left:50px;"></p>
+<p id="demo" style="margin-left: 50px;"><br></p>
+<p id="de"></p>
+
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML= " ";
+var list=[];
+var x= document.getElementsByClassName("title");
+var course=document.getElementById("program");
+
+if(course.value.length == 0){document.getElementById("demo").innerHTML="Please enter a program to begin Search"; return false;}
+document.getElementById("dem").innerHTML= "Search Results";
+
+	for (i = 0; i < x.length; i++) {
+  		if(x[i].textContent.toLowerCase().includes(course.value.toLowerCase())) {
+			list.push("true");
+			var ans = document.createElement("a");
+			ans.setAttribute("href", "#" + x[i].id );
+			ans.innerHTML =  x[i].textContent;
+			document.getElementById("demo").innerHTML += "{ success:true,  data:  "
+			var n=document.getElementById("demo").appendChild(ans);
+			document.getElementById("demo").innerHTML += " }"
+			document.getElementById("demo").innerHTML += " <br>";
+			
+		}}
+
+if(list.length==0) {document.getElementById("demo").innerHTML +=" { success: false,  data: Sorry...Program not available at the moment }";}
+}
+</script>
+
+
+
+<header>
+      <div class="container">
+        <nav style="float:left; margin-top:1px;">
+          <ul>
+		<li ><a href="#beginner">Beginner</a></li>
+            <li style=";"><a href="#certificate">Certificate Courses</a></li>
+            <li ><a href="#diploma">Diploma Courses</a></li>
+            <li ><a href="#corporate">Corporate Courses</a></li>
+	    <li ><a href="#special">Specialised Courses</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<div class="row">
+  <div class="container" style="color:#e8491d;"><h1 id="beginner"><b>BEGINNER</b></h1></div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="1">Computer Security Fundamentals</h2><br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color: #99bbff">
+    <h2 class="title" id="2">Computer Proficiency-MS Office Tools</h2> <br>
+	<p><span class="note">4000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 3 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="3">Basics Of Software Development</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#b3d9ff">
+    <h2 class="title" id="4">IT Career Path Training For Beginners</h2> <br>
+	<p><span class="note">3000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 3 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="5">Hardware and Computer Networking</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#99bbff">
+    <h2 class="title" id="6">Python & Java Programming</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="7">Computer Architecture Fundamentals</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="8">C & C++ Programming</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="container" style="color:#e8491d;"><h1 id="certificate"><b>CERTIFICATE COURSES</b></h1></div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title"  id="9">Cisco Certified Network Professional (CCNP)</h2><br>
+	<p><span class="note">3050 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color: #99bbff">
+    <h2 class="title" id="10">Graphic Design & Web Development</h2> <br>
+	<p><span class="note">4000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 3 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="11">Network Support and Maintenance</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#b3d9ff">
+    <h2 class="title"  id="12">Android Application Development</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="13">Certified Infromation Security Auditor(CISA)</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#99bbff">
+    <h2 class="title" id="14">Database Management System</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="15">Digital & Social Media Marketing</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="16">System Support & Maintenance</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="container" style="color:#e8491d;"><h1 id="diploma"><b>DIPLOMA COURSES</b></h1></div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="17">Software Engineering</h2><br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color: #99bbff">
+    <h2 class="title" id="18">Infrastructure Management</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="19">System Engineering</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#b3d9ff">
+    <h2 class="title" id="20">Network Engineering</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="21">Information Technology Management</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#99bbff">
+    <h2 class="title" id="22">Software Development</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="23">Networking and systems Administration</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="24">Ethical Hacking & Security Trends</h2><br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="container" style="color:#e8491d;"><h1 id="corporate"><b>CORPORATE COURSES</b></h1></div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="25">Project Management Program</h2><br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color: #99bbff">
+    <h2 class="title" id="26">Cyber Security Corporate Courses</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="27">Big Data Courses</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#b3d9ff">
+    <h2 class="title" id="28">Data Science and Analytics</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="29">AI and Machine Learning</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#99bbff">
+    <h2 class="title" id="30">Information System Secuirty</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="31">Natural Language Processing</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="32">Advanced Mobile App Development</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="container" style="color:#e8491d;"><h1 id="special"><b>SPECIALISED COURSES</b></h1></div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="33">Server Virtualization</h2><br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color: #99bbff">
+    <h2 class="title" id="34">GNU R</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="35">Cloud Computing</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#b3d9ff">
+    <h2 class="title" id="36">Open Source Projects</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="37">Robotics</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#99bbff">
+    <h2 class="title" id="38">Computer Forensics</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccccff;">
+    <h2 class="title" id="39">Deep Learning & Neural Networks</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+  <div class="column3" style="background-color:#ccc">
+    <h2 class="title" id="40">Geographic Information System (GIS)</h2> <br>
+	<p><span class="note">5000 GHC</span> - program fee</p>
+	<p style="font-size:17px;"><b>Duration: 4 months</b> </p>
+  </div>
+</div>
+
+
+    <div style="width:90%; margin:auto;overflow:hidden;">
+      
+	<h1><span class="main">Kalorm Training Institute</span><i>  - your IT PROFICIENCY is our PRIORITY!!</i></h1>
+	
+        <article id="main-col">
+          
+          <ul id="services">
+		<img src="./img/customer.png" style="width:100%;" >
+          </ul>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Send us a meassage</h3>
+            <form class="quote">
+  						<div>
+  							<label>Name</label><br>
+  							<input type="text" placeholder="Name" style=" font-size:17px; width:400px; height: 50px;">
+  						</div>
+  						<div>
+  							<label>Email</label><br>
+  							<input type="email" placeholder="Emial Address" style=" font-size:17px; width:400px; height: 50px;">
+  						</div>
+  						<div>
+  							<label>Message</label><br>
+
+  							<textarea placeholder="Message"  style=" font-size:17px; width:400px; height: 150px;"></textarea>
+  						</div>
+  						<button class="button_1" type="submit">Send</button>
+					</form>
+          </div>
+        </aside>
+      </div>
+
+
+    <footer>
+      <p>Kalorm Training Institute, Copyright &copy; 2020</p>
+    </footer>
+  </body>
+</html>
+
